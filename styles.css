@@ -89,12 +89,12 @@ input {
 }
 
 #illustration {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 75%;
+    max-height: 75%;
 }
 
 #illustrationContainer {
-    width: 300px;
+    width: 200px;
     margin: auto;
     padding-bottom: 10px;
 }
