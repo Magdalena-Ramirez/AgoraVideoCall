@@ -156,3 +156,13 @@ input {
     margin: 20px;
     cursor: pointer;
 }
+
+.incorrect{
+    border: 2px solid red;
+}
+
+.warning{
+    color: red;
+    display: none;
+    font-size: 12px;
+}
