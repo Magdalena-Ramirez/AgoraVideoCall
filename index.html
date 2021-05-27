@@ -16,9 +16,11 @@
                 <br/>
                 <form action="./index.html" onsubmit="return validate()">
                 <input type="text" id="username" placeholder="username" name="username"/>
+                <span class="warning" id="usernameWarning">Incorrect email</span>
                 <br/>
                 <input type="password" id="password" placeholder="password" name="password"/>
                 <button class="submitButton" type="submit" onclick="validate()">Login</button>
+                <span class="warning" id="passwordWarning">Password must be of atleast 8 characters</span>
                 </form>
             </div>
         </div>
