@@ -15,7 +15,7 @@
                 <span id="headingText">Login and enjoy <span id="highlighted">Unlimited</span> video calling</span>
                 <br/>
                 <form action="./index.html" onsubmit="return validate()">
-                <input type="text" id="email" placeholder="Email" name="email"/>
+                <input type="text" id="username" placeholder="username" name="username"/>
                 <br/>
                 <input type="password" id="password" placeholder="password" name="password"/>
                 <button class="submitButton" type="submit" onclick="validate()">Login</button>
@@ -34,7 +34,7 @@
     <script>
 
         function validate(){
-            let email = document.getElementById("email")
+            let username = document.getElementById("username")
             let password = document.getElementById("password")
 
             if(username.match(/\S+@\S+/)){
