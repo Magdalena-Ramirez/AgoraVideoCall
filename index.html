@@ -37,24 +37,33 @@
             let email = document.getElementById("email")
             let password = document.getElementById("password")
 
-            if(email.value.match(/\S+@\S+/)){
-                
-                email.className = ""
-
-                if(password.value.length >= 8){
-                    password.className = ""
-
-                    return true
-                }
-                else
-                {
-                    password.className = "incorrect"
-                    return false
-                }
-            }else{
-                email.className = "incorrect"
-                return false
-            }
+            if(username.match(/\S+@\S+/)){
+                        document.getElementById("username").className = ""
+                        document.getElementById("usernameWarning").style= "display: block"
+                        if(password.length>=8){
+                            document.getElementById("password").className = ""
+                            document.getElementById("passwordWarning").style= "display: block"
+                            return true
+                        }
+                        else{
+                            document.getElementById("password").className = "incorrect"
+                            document.getElementById("usernameWarning").style= "display: block"
+                            return false
+                        }
+                    }else{
+                        document.getElementById("username").className = "incorrect"
+                        document.getElementById("passwordWarning").style= "display: block"
+                        if(password.length>=8){
+                            document.getElementById("password").className = "" 
+                            document.getElementById("passwordWarning").style= "display: block"
+                        }
+                        else{
+                            document.getElementById("password").className = "incorrect"
+                            document.getElementById("passwordWarning").style= "display: block"
+                        }
+                        
+                        return false
+                    }
         }
     </script>
     </body>
