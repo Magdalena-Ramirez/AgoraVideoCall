@@ -80,8 +80,8 @@ input {
     display: flex;
     margin: 0 auto;
     margin-top: 60px;
-    width: 650px;
-    height: 650px;
+    width: 500px;
+    height: 500px;
     border-radius: 1000px;
     background-color: #ffffff4b;
     justify-items: center;
@@ -94,7 +94,7 @@ input {
 }
 
 #illustrationContainer {
-    width: 500px;
+    width: 400px;
     margin: auto;
     padding-bottom: 45px;
 }
