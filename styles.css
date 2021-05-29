@@ -89,14 +89,14 @@ input {
 }
 
 #illustration {
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #illustrationContainer {
-    width: 200px;
+    width: 500px;
     margin: auto;
-    padding-bottom: 10px;
+    padding-bottom: 45px;
 }
 
 #bottomText {
@@ -134,7 +134,7 @@ input {
     height: 250px;
 }
 
-.controls{
+.controls {
     justify-self: end;
     display: flex;
     flex-direction: row;
@@ -147,7 +147,7 @@ input {
     background: white;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    box-shadow: 0px 2px 12px rgb(75, 75, 75);
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.267);
 }
 
 .icon{
