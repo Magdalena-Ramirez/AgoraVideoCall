@@ -40,28 +40,28 @@
             let password = document.getElementById("password")
 
             if(username.match(/\S+@\S+/)){
-                        document.getElementById("username").className = ""
-                        document.getElementById("usernameWarning").style= "display: block"
+                        document.getElementById("username").className=""
+                        document.getElementById("usernameWarning").style="display: block"
                         if(password.length>=8){
-                            document.getElementById("password").className = ""
-                            document.getElementById("passwordWarning").style= "display: block"
+                            document.getElementById("password").className=""
+                            document.getElementById("passwordWarning").style="display: block"
                             return true
                         }
                         else{
-                            document.getElementById("password").className = "incorrect"
-                            document.getElementById("usernameWarning").style= "display: block"
+                            document.getElementById("password").className="incorrect"
+                            document.getElementById("usernameWarning").style="display: block"
                             return false
                         }
                     }else{
-                        document.getElementById("username").className = "incorrect"
-                        document.getElementById("passwordWarning").style= "display: block"
+                        document.getElementById("username").className="incorrect"
+                        document.getElementById("passwordWarning").style="display: block"
                         if(password.length>=8){
-                            document.getElementById("password").className = "" 
-                            document.getElementById("passwordWarning").style= "display: block"
+                            document.getElementById("password").className="" 
+                            document.getElementById("passwordWarning").style="display: block"
                         }
                         else{
-                            document.getElementById("password").className = "incorrect"
-                            document.getElementById("passwordWarning").style= "display: block"
+                            document.getElementById("password").className="incorrect"
+                            document.getElementById("passwordWarning").style="display: block"
                         }
                         
                         return false
