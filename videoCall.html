@@ -15,14 +15,15 @@
 <body>
     <div class="flexContainer">
         <div class="left-pane">
-            <div class="logoSmall">
-                <img class="logoElement" src="assets/agoraLogo.png" />
+            <div class="logo">
+                <img id="img-container" src="assets/agora-logo-rbg-blue.png" />
             </div>
             <span class="headingText">
                 Join a Call!
             </span>
             <input type="text" id="username" placeholder="Username" />
             <input type="text" id="channelName" placeholder="Channel Name" />
+            <span class="warning" id="channelNameWarning">Invalid Channel Name</span>
             <button class="submitButton" id="join">Join</button>
             <button class="submitButton" id="leave" style="background: red;">Leave</button>
         </div>
@@ -48,6 +49,43 @@
 
     <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.0.0.js"></script>
     <script src="agora.js"></script>
+
+    <script>
+
+        function validate(){
+            let username = document.getElementById("username").value
+            let channelName = document.getElementById("channelName").value
+
+            if(username.match(/\S+@\S+/)){
+                document.getElementById("username").className = ""
+                document.getElementById("usernameWarning").style = ""
+                if(channelName.length<1){
+                    document.getElementById("channelName").className = ""
+                    document.getElementById("channelNameWarning").style = ""
+                    return true
+                }
+                else{
+                    document.getElementById("channelName").className="incorrect"
+                    document.getElementById("channelNameWarning").style="display: block"
+                    return false
+                }
+            }else{
+                document.getElementById("username").className="incorrect"
+                document.getElementById("usernameWarning").style="display: block"
+                if(password.length>=8){
+                    document.getElementById("channelName").className="" 
+                    document.getElementById("channelNameWarning").style="display: block"
+                }
+                else{
+                    document.getElementById("channelName").className="incorrect"
+                    document.getElementById("channelNameWarning").style="display: block"
+                }
+                
+                return false
+            }
+        }
+    </script>
+
 </body>
 
 </html>
