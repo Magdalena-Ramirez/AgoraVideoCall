@@ -118,20 +118,21 @@ input {
 }
 
 #SelfStream {
-    margin-top: 150px;
+    margin-top: 75px;
     justify-self: center;
     border: 2px solid #099dfd;
     width: 800px;
-    height: 500px;
+    height: 50vh;
 }
 
 #remoteStream {
     text-align: left;
     margin-top: 20px;
-    justify-self: center;
+    justify-self: right;
     border: 2px solid #099dfd;
     width: 400px;
-    height: 250px;
+    height: 27vh;
+    align-items: right;
 }
 
 .controls {
@@ -142,7 +143,7 @@ input {
     justify-content: space-evenly;
     margin-top: 30px;
     margin-bottom: 0px;
-    height: 100px;
+    height: 50px;
     width: 600px;
     background: white;
     border-top-left-radius: 30px;
